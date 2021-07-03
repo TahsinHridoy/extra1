@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html doucoment</title>
+</head>
+<body>
+    <select>
+        <option value="merigold">merigold</option>
+        <option value="queenflower">queenflower</option>
+        <option value="rose">rose</option>
+        <option value="unface">sunface</option>
+    </select>
+    <template>
+        <h4>This is a template</h4>
+        <small>HI</small>
+        &nbsp;
+        <strong>Hello</strong>
+    </template>
+    <script>
+        const template = document.querySelector("template")
+        const content = template.content.cloneNode(true)
+        document.body.append(content)
+    </script>
+    <!-- i am not understant meta tag -->
+    <meta property = "og:title" content="Are you programming too much?">
+    <div>
+        <label>File Upload</label>
+    </div>
+    <div>
+        <progress value="70" max="100">50%</progress>
+    </div>
+
+    <div>
+        <label>colour</label>
+    </div>
+    <div>
+        <input type="color">
+    </div>
+
+    <div>
+        <label>secound</label>
+    </div>
+    <div>
+        <input type="time"> 
+    </div>
+    <!-- Don't know how wording the picture tag -->
+    <picture>
+        <source media="(min-width:650px)" srcset="cake1.png">
+        <source media="(min-width:465px)" srcset="cake2.png">
+        <img src="sale.png" alt="sale_pic" style="width: auto;">
+    </picture>
+</body>
+</html>
